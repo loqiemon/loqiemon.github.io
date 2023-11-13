@@ -1,129 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <main class="main">
-        <header class="header">
-            <div class="header__text">
-                <span class="header__name">Иван Артемов</span>
-                <span class="header__post">Fullstack разработчик</span>
-            </div>
-            <!-- <img src="" alt="avatar" class="header__image"> -->
-        </header>
-        <div class="links">
-            <a href="tel:+79085011605" class="links__item">
-                <img src="./img/phone-svgrepo-com.svg" alt="github_icon" class="links__image">
-                <span class="links__text">+79085011605</span>
-            </a>
-            <a href="https://github.com/loqiemon" class="links__item">
-                <img src="./img/iconmonstr-github-1.svg" alt="github_icon" class="links__image">
-                <span class="links__text">loqiemon</span>
-            </a>
-            <a href="mailto:vagabund3219@gmail.com" class="links__item">
-                <img src="./img/at-symbol-svgrepo-com.svg" alt="gmail_icon" class="links__image">
-                <span class="links__text">vagabund3219@gmail.com</span>
-            </a>
-            <a href="https://t.me/vagabund3219" class="links__item">
-                <img src="./img/telegram-fill-svgrepo-com.svg" alt="github_icon" class="links__image">
-                <span class="links__text">@vagabund3219</span>
-            </a>
-        </div>
-        <span class="underline"></span>
-        <h2>Обо мне</h2>
-        <p class="about-me">
-            Иван, 21 год, обучаюсь на 4ом курсе института по направлению информационные технологии, в течение 4ех лет изучаю программирование, в течение 2ух лет изучаю веб и за последние полгода участвовал в 7 хакатонах из которых 3 первых места, 1 второе и 2 третьих.
-            Победитель гранта от фонда содействия инновациям на миллион рублей. Хочется дальше развиваться в фронтенд направлении. 
-        </p>
-        <ul class="hackatons">
-            <li class="hackatons-item">3 место PROFBUH HACKATHON 25 июня</li>
-            <li class="hackatons-item">1 место в региональной научной конференции</li>
-            <li class="hackatons-item">1 место в ринховском хакатоне Rinhack 29 апреля</li>
-            <li class="hackatons-item">1 место в региональном хакатоне «Нехакатон» 23 апреля</li>
-            <li class="hackatons-item">2 место в ринховском хакатоне Rinhack 26 ноября</li>
-        </ul>
-        <h2 class="education">Опыт и проекты</h2>
-        <ul class="projects">
-            <li class="projects__item">
-                <h3  class="projects__name">Блокчейн-мессенджер</h3>
-                <h4 class="projects__descr">Работа в стартапе. 8мес.</h4>
-                <span class="projects_stack"> Стек: React. MongoDB. ExpressJs. Typescript</span>
-                <span class="projects__responsibility">Работал с: </span>
-                <ul class="projects__feature-list">
-                    <li class="projects__feature">Адаптивная верстка</li>
-                    <li class="projects__feature">Чат на websockets</li>
-                    <li class="projects__feature">Стили: scss + styled-components</li>
-                    <li class="projects__feature">CORS</li>
-                    <li class="projects__feature">JWT авторизация. Работа с токенами и куки.</li>
-                </ul> 
-            </li>
-            <li class="projects__item">
-                <h3 class="projects__name" >Трекер событий.</h3>
-                <h4 class="projects__descr">Пет-проект</h4>
-                <span class="projects_stack"> Стек: React. Postgresql. ExpressJs. Typescript</span>
-                <span class="projects__responsibility">Работал с: </span>
-                <ul class="projects__feature-list">
-                    <li class="projects__feature">Стили: scss</li>
-                    <li class="projects__feature">Анимации: Framer-motion</li>
-                    <li class="projects__feature">Drag'n'Drop</li>
-                    <li class="projects__feature">БД выложена на railway</li>
-                    <li class="projects__feature">Фронтенд выложен на netlify</li>
-                    <li class="projects__feature">Бэкенд выложен на vercel</li>
-                    <li class="projects__feature">CORS</li>
-                    <li class="projects__feature">Rest Api</li>
-                </ul> 
-            </li>
-            <li class="projects__item">
-                <h3 class="projects__name" >Сервис техподдержки.</h3>
-                <h4 class="projects__descr">Хакатон 1ое место</h4>
-                <span class="projects_stack"> Стек: React. MongoDB. ExpressJs. Typescript</span>
-                <span class="projects__responsibility">Работал с: </span>
-                <ul class="projects__feature-list">
-                    <li class="projects__feature">Чат на websockets</li>
-                    <li class="projects__feature">Drag'n'Drop</li>
-                    <li class="projects__feature">JWT авторизация. Работа с токенами.</li>
-                    <li class="projects__feature">Стили: tailwind</li>
-                    <li class="projects__feature">Rest Api</li>
-                    <li class="projects__feature">CORS</li>
-                    <li class="projects__feature">CRUD операции</li>
-                </ul> 
-            </li>
-            <li class="projects__item">
-                <h3 class="projects__name" >Сервис учета расходов.</h3>
-                <h4 class="projects__descr">Пет-проект</h4>
-                <span class="projects_stack"> Стек: Django. Javascript. Postgresql</span>
-                <span class="projects__responsibility">Работал с: </span>
-                <ul class="projects__feature-list">
-                    <li class="projects__feature">Адаптивная верстка</li>
-                    <li class="projects__feature">Сканирование чеков</li>
-                    <li class="projects__feature">Стили: scss + bootstrap</li>
-                    <li class="projects__feature">Работа с внешними api</li>
-                    <li class="projects__feature">SPA на чистом javascript</li>
-                    <li class="projects__feature">Выложен на хостинг</li>
-                    <li class="projects__feature">Rest Api</li>
-                </ul> 
-            </li>
-            <li class="projects__item">
-                <h3 class="projects__name" >Steam-расширение</h3>
-                <h4 class="projects__descr">Пет-проект</h4>
-                <span class="projects_stack"> Стек: Javascript. Django. ExpressJs</span>
-                <span class="projects__responsibility">Работал с: </span>
-                <ul class="projects__feature-list">
-                    <li class="projects__feature">Работа с dom-деревом</li>
-                    <li class="projects__feature">Взаимодействие со сторонними api</li>
-                    <li class="projects__feature">Бот дл телеграм</li>
-                    <li class="projects__feature">Сборка Webpack</li>
-                    <li class="projects__feature">Работа с прокси</li>
-                    <li class="projects__feature">Парсинг сайтов</li>
-                    <li class="projects__feature">CORS</li>
-                    <li class="projects__feature">Rest Api</li>
-                </ul> 
-            </li>
-            <li class="projects__item">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main class="main">
+			<header class="header">
+				<div class="header__text">
+					<span class="header__name">Иван Артемов</span>
+					<span class="header__post">Fullstack разработчик</span>
+				</div>
+				<!-- <img src="" alt="avatar" class="header__image"> -->
+			</header>
+			<div class="links">
+				<a href="tel:+79085011605" class="links__item">
+					<img
+						src="./img/phone-svgrepo-com.svg"
+						alt="github_icon"
+						class="links__image"
+					/>
+					<span class="links__text">+79085011605</span>
+				</a>
+				<a href="https://github.com/loqiemon" class="links__item">
+					<img
+						src="./img/iconmonstr-github-1.svg"
+						alt="github_icon"
+						class="links__image"
+					/>
+					<span class="links__text">loqiemon</span>
+				</a>
+				<a href="mailto:vagabund3219@gmail.com" class="links__item">
+					<img
+						src="./img/at-symbol-svgrepo-com.svg"
+						alt="gmail_icon"
+						class="links__image"
+					/>
+					<span class="links__text">vagabund3219@gmail.com</span>
+				</a>
+				<a href="https://t.me/vagabund3219" class="links__item">
+					<img
+						src="./img/telegram-fill-svgrepo-com.svg"
+						alt="github_icon"
+						class="links__image"
+					/>
+					<span class="links__text">@vagabund3219</span>
+				</a>
+			</div>
+			<span class="underline"></span>
+			<h2>Обо мне</h2>
+			<p class="about-me">
+				Иван, 21 год, обучаюсь на 4ом курсе института по направлению
+				информационные технологии, в течение 4ех лет изучаю программирование, в
+				течение 2ух лет изучаю веб и за последние полгода участвовал в 9
+				хакатонах из которых 3 первых места, 2 вторых и 2 третьих. Победитель
+				гранта от фонда содействия инновациям на миллион рублей. Хочется дальше
+				развиваться в фронтенд направлении.
+			</p>
+			<ul class="hackatons">
+				<li class="hackatons-item">2 место Цифровой прорыв СКФО 12 ноября</li>
+				<li class="hackatons-item">3 место PROFBUH HACKATHON 25 июня</li>
+				<li class="hackatons-item">
+					1 место в региональной научной конференции
+				</li>
+				<li class="hackatons-item">
+					1 место в ринховском хакатоне Rinhack 29 апреля
+				</li>
+				<li class="hackatons-item">
+					1 место в региональном хакатоне «Нехакатон» 23 апреля
+				</li>
+				<li class="hackatons-item">
+					2 место в ринховском хакатоне Rinhack 26 ноября
+				</li>
+			</ul>
+			<h2 class="education">Опыт и проекты</h2>
+			<ul class="projects">
+				<li class="projects__item">
+					<h3 class="projects__name">Титан-ит</h3>
+					<h4 class="projects__descr">Титан-ит. 1мес.</h4>
+					<span class="projects_stack"> Стек: React. Typescript .NET</span>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Адаптивная верстка</li>
+						<li class="projects__feature">RTK-query</li>
+						<li class="projects__feature">Стили: mui + styled-components</li>
+						<li class="projects__feature">Заполнение бд из CSV</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Сервис автоматического дубляжа видео.</h3>
+					<h4 class="projects__descr">Хакатон 2ое место</h4>
+					<span class="projects_stack"> Стек: React. Typescript. Flask. </span>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Адаптивная верстка</li>
+						<li class="projects__feature">Стили: styled-components</li>
+						<li class="projects__feature">Видеоплеер с чанковой загрузкой</li>
+						<li class="projects__feature">Транскрибация видео</li>
+						<li class="projects__feature">Конвертация MP4 => m3u8/dash</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Интернет магазин с фурнитурой</h3>
+					<h4 class="projects__descr">Фриланс</h4>
+					<span class="projects_stack">
+						Стек: React. Typescript. RTK-query.
+					</span>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Адаптивная верстка</li>
+						<li class="projects__feature">Сайт выложен на Selectel</li>
+						<li class="projects__feature">Стили: styled-components</li>
+						<li class="projects__feature">
+							JWT авторизация. Работа с токенами и куки.
+						</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Блокчейн-мессенджер</h3>
+					<h4 class="projects__descr">Работа в стартапе. 8мес.</h4>
+					<span class="projects_stack">
+						Стек: React. MongoDB. ExpressJs. Typescript</span
+					>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Адаптивная верстка</li>
+						<li class="projects__feature">Чат на websockets</li>
+						<li class="projects__feature">Стили: scss + styled-components</li>
+						<li class="projects__feature">CORS</li>
+						<li class="projects__feature">
+							JWT авторизация. Работа с токенами и куки.
+						</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Трекер событий.</h3>
+					<h4 class="projects__descr">Пет-проект</h4>
+					<span class="projects_stack">
+						Стек: React. Postgresql. ExpressJs. Typescript</span
+					>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Стили: scss</li>
+						<li class="projects__feature">Анимации: Framer-motion</li>
+						<li class="projects__feature">Drag'n'Drop</li>
+						<li class="projects__feature">БД выложена на railway</li>
+						<li class="projects__feature">Фронтенд выложен на netlify</li>
+						<li class="projects__feature">Бэкенд выложен на vercel</li>
+						<li class="projects__feature">CORS</li>
+						<li class="projects__feature">Rest Api</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Сервис техподдержки.</h3>
+					<h4 class="projects__descr">Хакатон 1ое место</h4>
+					<span class="projects_stack">
+						Стек: React. MongoDB. ExpressJs. Typescript</span
+					>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Чат на websockets</li>
+						<li class="projects__feature">Drag'n'Drop</li>
+						<li class="projects__feature">
+							JWT авторизация. Работа с токенами.
+						</li>
+						<li class="projects__feature">Стили: tailwind</li>
+						<li class="projects__feature">Rest Api</li>
+						<li class="projects__feature">CORS</li>
+						<li class="projects__feature">CRUD операции</li>
+					</ul>
+				</li>
+				<!-- <li class="projects__item">
+					<h3 class="projects__name">Сервис учета расходов.</h3>
+					<h4 class="projects__descr">Пет-проект</h4>
+					<span class="projects_stack">
+						Стек: Django. Javascript. Postgresql</span
+					>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Адаптивная верстка</li>
+						<li class="projects__feature">Сканирование чеков</li>
+						<li class="projects__feature">Стили: scss + bootstrap</li>
+						<li class="projects__feature">Работа с внешними api</li>
+						<li class="projects__feature">SPA на чистом javascript</li>
+						<li class="projects__feature">Выложен на хостинг</li>
+						<li class="projects__feature">Rest Api</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<h3 class="projects__name">Steam-расширение</h3>
+					<h4 class="projects__descr">Пет-проект</h4>
+					<span class="projects_stack">
+						Стек: Javascript. Django. ExpressJs</span
+					>
+					<span class="projects__responsibility">Работал с: </span>
+					<ul class="projects__feature-list">
+						<li class="projects__feature">Работа с dom-деревом</li>
+						<li class="projects__feature">Взаимодействие со сторонними api</li>
+						<li class="projects__feature">Бот дл телеграм</li>
+						<li class="projects__feature">Сборка Webpack</li>
+						<li class="projects__feature">Работа с прокси</li>
+						<li class="projects__feature">Парсинг сайтов</li>
+						<li class="projects__feature">CORS</li>
+						<li class="projects__feature">Rest Api</li>
+					</ul>
+				</li> -->
+				<!-- <li class="projects__item">
                 <h3 class="projects__name" >Chrome-расширение</h3>
                 <h4 class="projects__descr">Пет-проект</h4>
                 <span class="projects_stack"> Стек: Javascript. Selenium. Flask</span>
@@ -136,33 +220,35 @@
                     <li class="projects__feature">Парсинг сайтов</li>
                     <li class="projects__feature">CORS</li>
                 </ul> 
-            </li>
-        </ul>
-        <p> 
-            Было много других проектов, но меньшего масштаба, расширения с встроенным chatgpt для перевода текста, ответа на вопросы и других целей.
-            Кликеры/парсеры на python, чат на flutter для мобильных устройств, небольшие приложения с интефейсом на python для предыдущих проектов.
-            Использовал sass, scss, styled components, bootstrap, material ui.
-            Также в проекты с чатами буду добавлять mobx/redux. Планирую создать сервис для совместного просмотра с использованием webrtc.
-        </p>
-        <h2 class="education">Стек</h2>
-        <div class="stack">
-            <span class="stack__item">React</span>
-            <span class="stack__item">Javascript</span>
-            <span class="stack__item">Python</span>        
-            <span class="stack__item">Node.js</span>
-            <span class="stack__item">Express</span>
-            <span class="stack__item">MongoDB</span>
-            <span class="stack__item">SASS/SCSS</span>
-            <span class="stack__item">Webpack</span>
-            <span class="stack__item">HTML/CSS</span>
-            <span class="stack__item">Bootstrap</span>
-            <span class="stack__item">MaterialUI</span>
-            <span class="stack__item">Django</span>
-            <span class="stack__item">SQL</span>
-            <span class="stack__item">npm</span>
-            <span class="stack__item">Git</span>
-        </div>
-        
-    </main>
-</body>
+            </li> -->
+			</ul>
+			<p>
+				Было много других проектов, но меньшего масштаба, расширения с
+				встроенным chatgpt для перевода текста, ответа на вопросы и других
+				целей. Кликеры/парсеры на python, чат на flutter для мобильных
+				устройств, небольшие приложения с интефейсом на python для предыдущих
+				проектов. Использовал sass, scss, styled components, bootstrap, material
+				ui. Также в проекты с чатами буду добавлять mobx/redux. Планирую создать
+				сервис для совместного просмотра с использованием webrtc.
+			</p>
+			<h2 class="education">Стек</h2>
+			<div class="stack">
+				<span class="stack__item">React</span>
+				<span class="stack__item">Javascript</span>
+				<span class="stack__item">Python</span>
+				<span class="stack__item">Node.js</span>
+				<span class="stack__item">Express</span>
+				<span class="stack__item">MongoDB</span>
+				<span class="stack__item">SASS/SCSS</span>
+				<span class="stack__item">Webpack</span>
+				<span class="stack__item">HTML/CSS</span>
+				<span class="stack__item">Bootstrap</span>
+				<span class="stack__item">MaterialUI</span>
+				<span class="stack__item">Django</span>
+				<span class="stack__item">SQL</span>
+				<span class="stack__item">npm</span>
+				<span class="stack__item">Git</span>
+			</div>
+		</main>
+	</body>
 </html>
